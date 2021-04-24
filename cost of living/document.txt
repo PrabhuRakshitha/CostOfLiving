@@ -1,0 +1,36 @@
+
+
+scrapy shell "https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States"
+
+
+scrapy shell https://www.numbeo.com/cost-of-living/in/Mumbai?displayCurrency=USD
+
+response.css('title::text').getall()re
+
+
+response.css('title::text').re(r'Quotes.*')
+
+response.xpath('/title').get()
+response.xpath('//body/div/div/table/td/select').get()
+
+response.xpath('//body/div/table/tr/th/text()').re(r'Apartment.*')
+
+response.xpath('//body/div/table/tr').re(r'Apartment.*')
+
+
+response.xpath('//body/div/table/tr').get()
+
+ data.xpath('//td/text()').getall()
+data.xpath('//td/text()')[0].getall()
+ data.xpath('//td[@class="priceValue "]/text()').extract()
+
+ response.xpath('//body/div/table/tr')
+
+ city :
+ response.xpath('//body/div//span').get()
+
+ data =response.xpath('//body/div/table/tr').getall()
+
+ response.xpath('//body/div//span/a/span/text()').getall()
+
+
